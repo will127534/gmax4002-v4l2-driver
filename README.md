@@ -11,8 +11,7 @@ Additionally it only supports 10bit 2.4Mpix (2048x1200) mode, if anyone has a mo
 ## Working platform
 The code is tested with RPI5/Compute module 4 with Analog discovery 2 as pulse generator.  
 ![_DSC9912](https://github.com/user-attachments/assets/bb5db94e-b476-4b03-acfc-1de090bd2c00)  
-See the action in video here: https://youtu.be/cdhxaaCYhbM
-the 2048x1200 mode has been tested at least up to 150 fps stable, at 166 fps I starts to see frame drop on the RPI5 side, not exactly quite sure what happened there (Maybe overheat? I didn't have heatsink on the top)
+See the action in video here: [Youtube](https://youtu.be/cdhxaaCYhbM).The 2048x1200 mode has been tested at least up to 150 fps stable, at 166 fps I starts to see frame drop on the RPI5 side, not exactly quite sure what happened there (Maybe overheat? I didn't have heatsink on the top)
 ![WIN_20250907_16_41_42_Pro](https://github.com/user-attachments/assets/9dc26838-d668-4146-864c-7a420930f4c0)  
 
 For libcamera support, it is not added to my fork yet so here is a quick run down on how to enable the support in libcamera:
