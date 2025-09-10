@@ -7,6 +7,7 @@ It will still expose them to the upper layer because some applications (rpicam a
 The driver requires 4-lane MIPI, as I did not see a way to use 2 or 1 lane from the leaked(?) datasheet here: https://informnapalm.org/ua/wp-content/uploads/sites/9/2024/01/GMAX4002_Pre_Datasheet_V0.3.2_20231109.pdf  
 Additionally it only supports 10bit 2.4Mpix (2048x1200) mode, if anyone has a more up to date version of the datasheet, feel free to open an issue and send the datasheet.  
 
+One of the reason why I put the code in its current form is that it is actually quite a bare minimum V4L2 camera driver with V4L2 active state API that I can use later with other sensors to speed up bring up process.  
 
 ## Working platform
 The code is tested with RPI5/Compute module 4 with Analog discovery 2 as pulse generator.  
