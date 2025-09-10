@@ -1,0 +1,5 @@
+#!/bin/sh
+
+dtc -Wno-interrupts_property -Wno-unit_address_vs_reg -@ -I dts -O dtb -o gmax4002.dtbo gmax4002-overlay.dts
+
+install -m 751 gmax4002.dtbo /boot/overlays/
