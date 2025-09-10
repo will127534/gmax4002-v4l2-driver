@@ -1,7 +1,7 @@
 # Minimum Driver for GMAX4002
 
 GMAX4002 requires external triger to generate the frame, such that it can't really drive itself like most of the MIPI camera sensors, as such the driver here is missing critical V4L2 controls like V4L2_CID_VBLANK, V4L2_CID_HBLANK and V4L2_CID_EXPOSURE and the expect is that the users will generate the pulses externally via other means.  
-The way this driver currently setup is with external exposure, which means exposure and framerate is determined by a external pulse frequency and the high level time, and the driver won't do anything about the controls for V4L2_CID_VBLANK, V4L2_CID_HBLANK and V4L2_CID_EXPOSURE. 
+The way this driver currently setup is with external exposure, which means exposure and framerate is determined by a external pulse frequency and the level high duration, and the driver won't do anything about the controls for V4L2_CID_VBLANK, V4L2_CID_HBLANK and V4L2_CID_EXPOSURE. 
 It will still expose them to the upper layer because some applications (rpicam and libcaemra) requires these minimum controls.  
   
 The driver requires 4-lane MIPI, as I did not see a way to use 2 or 1 lane from the leaked(?) datasheet here: https://informnapalm.org/ua/wp-content/uploads/sites/9/2024/01/GMAX4002_Pre_Datasheet_V0.3.2_20231109.pdf  
